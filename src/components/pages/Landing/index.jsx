@@ -55,15 +55,9 @@ export const LandingPage = () => {
     </button>
   );
 
-  const Section = ({ children, className }) => (
-    <section className={className}>
-      {children}
-    </section>
-  );
-
   return (
     <div className='flex-c w-[100vw] secondary-c'>
-      <Section className='primary-c flex pt-4 pb-8'>
+      <section className='primary-c flex pt-4 pb-8'>
         <div className='flex-c mx-auto'>
           <h1 className='text-6xl mb-8 text-white'>Asylum Office Grant Rate Tracker</h1>
           <h3 className='text-white'>
@@ -71,8 +65,8 @@ export const LandingPage = () => {
             Asylum Office decisions.
           </h3>
         </div>
-      </Section>
-      <Section className='flex-c pt-10'>
+      </section>
+      <section className='flex-c pt-10'>
         <div className='flex-c'>
           <div className='flex justify-center m-14 gap-20 text-2xl'>
             <ImageCard src={barGraph} alt='Bar Graph' title='Search Grant Rates By Office' imgClassName='h-[300px] w-[500px]' />
@@ -84,10 +78,10 @@ export const LandingPage = () => {
             <Button onClick={downloadCSV}>Download the Data</Button>
           </div>
         </div>
-      </Section>
-      <Section className='flex'>
+      </section>
+      <section className='flex'>
         <div className='flex-1 content-center p-20'>
-          <img src={paperStack} alt='Human Rights First' className='hrf-img rounded-2xl h-[70%] w-[100%]' />
+          <img src={paperStack} alt='Human Rights First' className='rounded-2xl h-[70%] w-[100%]' />
         </div>
         <div className='flex-1 content-center p-20'>
           <p className='text-xl'>
@@ -96,8 +90,8 @@ export const LandingPage = () => {
             year, nationality, and asylum office, visualize the data with charts and heat maps, and download the data set.
           </p>
         </div>
-      </Section>
-      <Section className='flex-c gap-16'>
+      </section>
+      <section className='flex-c gap-16'>
         <div>
           <h3 className='text-5xl'>Systemic Disparity Insights</h3>
         </div>
@@ -112,17 +106,17 @@ export const LandingPage = () => {
             description="Between fiscal year 2017 and 2020, the New York asylum office's average grant rate was 6 times lower than the San Francisco asylum office."
           />
         </div>
-      </Section>
-      <Section>
+      </section>
+      <section>
         <Button onClick={handleReadMore} className='primary-c text-white px-4 py-2'>
           Read More
         </Button>
-      </Section>
-      <Section className='p-16'>
+      </section>
+      <section className='p-16'>
         <button className='font-medium' onClick={scrollToTop}>
           Back To Top ^
         </button>
-      </Section>
+      </section>
     </div>
   );
 };
