@@ -23,6 +23,22 @@ body {
     @apply flex flex-col flex-1
 }
 
+.profile-align {
+    @apply h-screen flex justify-center items-center bg-gray-100
+}
+
+.profile-card {
+    @apply bg-white shadow-lg rounded-lg p-8 w-96 text-center
+}
+
+.profile-img {
+    @apply rounded-full w-32 h-32 mx-auto mb-4 border-4 border-stone-600
+}
+
 .nav-btn {
    @apply text-[#E2F0F7] hover:border-[#E2F0F7] border-transparent border-2 px-3 py-2 rounded-xl
+}
+
+.profile-btn {
+    @apply px-4 py-2 bg-stone-600 text-white rounded-lg hover:bg-stone-900 transition
 }
