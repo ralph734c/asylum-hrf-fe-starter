@@ -12,7 +12,7 @@ export const LoggingButtons = () => {
   // Show log out only if user is authenticated
   const buttonText = isAuthenticated ? 'Log Out' : 'Log In';
 
-  // Ensure proper functionality is followed if authenticated, or not.
+  // Ensure proper log in/out functionality is followed if authenticated, or not.
   const handleLogging = () => {
     if (isAuthenticated) {
       logout({
